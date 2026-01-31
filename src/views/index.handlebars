@@ -1,0 +1,11 @@
+<input type="text" name="msg" id="input-msg" />
+
+<div id="box">
+  <p>Cargando mensajes...</p>
+</div>
+
+{{! Conectamos socket con el cliente, este archivo se comparte automaticamente cuando instalamos socket.io }}
+<script src="/socket.io/socket.io.js"></script>
+{{! Script donde vamos a estar trabajando, en la parte del cliente, con socket }}
+{{! Lo busca desde la carpeta public, ya que ahi definimos los archivos estaticos, como no indicamos ruta, considera como base "/" }}
+<script src="/js/main.js"></script>
